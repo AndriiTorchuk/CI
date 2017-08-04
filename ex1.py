@@ -13,5 +13,3 @@ def calc_multiply(a, b):
 
 def calc_divide(a, b):
     return(a/b)
-
-print ("12345")
