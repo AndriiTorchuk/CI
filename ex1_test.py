@@ -1,21 +1,20 @@
 """
 Testing ex1
 """
+from ex1 import *
+import unittest
 
-import ex1
+class mytest(unittest.TestCase):
+    def test_calc_plus(self):
+        self.assertEqual(calc_plus(2, 3), 5)
 
-def test_calc_plus():
-    res1 = ex1.calc_plus(2, 2)
-    assert res1 == 4
+    def test_calc_minus(self):
+        self.assertEqual(calc_minus(12, 3), 9)
+   
+    def test_calc_multiplyself(self):
+        self.assertEqual(calc_multiply(2, 3), 6)
 
-def test_calc_minus():
-    res2 = ex1.calc_minus(10, 5)
-    assert res2 == 5
+    def test_calc_divide(self):
+        self.assertEqual(calc_divide(15, 3), 5)
 
-def test_calc_multiply():
-    res3 = ex1.calc_multiply(3, 5)
-    assert res3 == 15
-
-def test_calc_divide():
-    res4 = ex1.calc_divide(8, 4)
-    assert res4 == 2
+unittest.main()
