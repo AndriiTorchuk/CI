@@ -11,7 +11,7 @@ class mytest(unittest.TestCase):
     def test_calc_minus(self):
         self.assertEqual(calc_minus(12, 3), 9)
    
-    def test_calc_multiplyself(self):
+    def test_calc_multiply(self):
         self.assertEqual(calc_multiply(2, 3), 6)
 
     def test_calc_divide(self):
