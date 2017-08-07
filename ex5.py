@@ -1,5 +1,5 @@
 """
-Exercise 5
+Exercise 5: assertEqual Method
 """
 
 import unittest
