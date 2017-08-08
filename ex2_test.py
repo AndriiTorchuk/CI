@@ -10,6 +10,6 @@ class Test_calcu(unittest.TestCase):
     def test_adding_res(self):
         self.assertEqual(6, self.calc.add(2, 4))
 
-if __name__ =='__main__':
-    unittest.main()
+
+unittest.main()
 

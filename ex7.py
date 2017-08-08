@@ -12,4 +12,12 @@ def sortfunc(mylist):
                 ss = True
     return mylist
 
-print(sortfunc([3, 7, 7, 3, 5, 8, 9, 1]))
+
+if __name__ == '__main__':
+    if sortfunc([3, 7, 2, 4, 5, 8, 6, 1]) != [1, 2, 3, 4, 5, 6, 7, 8]:
+        print("Some mistake")
+
+print(sortfunc([]))
+print(sortfunc([5]))
+print(sortfunc([2, 4, -5, 3, 0, -1]))
+

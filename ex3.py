@@ -18,7 +18,7 @@ class Test_calcu(unittest.TestCase):
     def test_adding_res(self):
         self.assertEqual("hello", self.calc.add("he", "llo"))
 
-if __name__ =='__main__':
-    unittest.main()
+
+unittest.main()
 
 
