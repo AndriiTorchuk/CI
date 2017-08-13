@@ -1,10 +1,15 @@
 """
-Exercise 9. Some graphics
+Exercise 9. 
 """
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-import matplotlib.pyplot as plt
-
-plt.plot([1,2,4,5,3,4,3])
-plt.ylabel('numbers')
-plt.xlabel('time')
-plt.show()
+driver = webdriver.Chrome()
+driver.get("http://www.python.org")
+assert "Python" in driver.title
+elem = driver.find_element_by_name("q")
+elem.clear()
+elem.send_keys("pycon")
+elem.send_keys(Keys.RETURN)
+assert "No results found." not in driver.page_source
+driver.close()
