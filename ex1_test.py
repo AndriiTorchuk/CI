@@ -4,17 +4,21 @@ Testing ex1
 from ex1 import *
 import unittest
 
-class mytest(unittest.TestCase):
+class ExTest(unittest.TestCase):
+    def setUp(self):
+        self.calc = Calculator()
+
     def test_calc_plus(self):
-        self.assertEqual(calc_plus(2, 3), 5)
+        self.assertEqual(self.calc.calc_plus(2, 3), 5)
 
     def test_calc_minus(self):
-        self.assertEqual(calc_minus(12, 3), 9)
+        self.assertEqual(self.calc.calc_minus(12, 3), 9)
    
     def test_calc_multiply(self):
-        self.assertEqual(calc_multiply(2, 3), 6)
+        self.assertEqual(self.calc.calc_multiply(2, 3), 6)
 
     def test_calc_divide(self):
-        self.assertEqual(calc_divide(15, 3), 5)
+        self.assertEqual(self.calc.calc_divide(15, 3), 5)
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
