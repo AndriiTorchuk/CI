@@ -11,5 +11,6 @@ class Test_calcu(unittest.TestCase):
         self.assertEqual(6, self.calc.add(2, 4))
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
 
