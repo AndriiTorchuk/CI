@@ -10,3 +10,5 @@ class Calculator():
         return(a*b)
     def calc_divide(self,a, b):
         return(a/b)
+
+
