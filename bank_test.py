@@ -6,8 +6,8 @@ Test Drivev Development
 """
 
 import unittest
-from ex10 import Account
-from ex10 import Bank
+from account import Account
+from account import Bank
 
 class BankTest(unittest.TestCase):
     def test_bank_empty(self):

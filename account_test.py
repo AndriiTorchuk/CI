@@ -3,7 +3,7 @@ Exercise 10_1.
 Test Driven Development
 """
 
-from ex10 import Account
+from account import Account
 import unittest
 
 class TestAccount(unittest.TestCase):
